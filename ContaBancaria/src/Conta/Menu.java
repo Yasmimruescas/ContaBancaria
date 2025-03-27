@@ -12,23 +12,23 @@ public class Menu {
 
 		while (true) {
 
-			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND	+ "*****************************************************");
-			System.out.println(" 	 													");
+			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND	+ "********************************************************");
+			System.out.println(" 	 						");
 			System.out.println("                    BANCO DO BRAZIL!                    ");
-			System.out.println("														");
+			System.out.println("							");
 			System.out.println("********************************************************");
-			System.out.println("\n1- Criar uma conta!!");
-			System.out.println("2- Listar todas as contas!");
-			System.out.println("3- Buscar conta por número!");
-			System.out.println("4- Atualizar dados da conta!");
-			System.out.println("5- Apagar conta!");
-			System.out.println("6- Sacar!")	;
-			System.out.println("7- Depositar!");
-			System.out.println("8- Transferir valores entre contas!");
-			System.out.println("9- Sair!");
-			System.out.println("\n*********************************************************");
-			System.out.println("\nDigite a opção que deseja:");
-			System.out.println(" 														" + Cores.TEXT_RESET);
+			System.out.println("               1- Criar uma conta                       ");
+			System.out.println("               2- Listar todas as contas!               ");
+			System.out.println("               3- Buscar conta por número!              ");
+			System.out.println("               4- Atualizar dados da conta!             ");
+			System.out.println("               5- Apagar conta!                         ");
+			System.out.println("               6- Sacar!                                ");
+			System.out.println("               7- Depositar!                            ");
+			System.out.println("               8- Transferir valores entre contas!      ");
+			System.out.println("               9- Sair!\"                                ");
+			System.out.println("********************************************************");
+			System.out.println("     	       Digite a opção que deseja:               ");
+			System.out.println(" 							" + Cores.TEXT_RESET);
 
 			opcao = scanner.nextInt();
 
