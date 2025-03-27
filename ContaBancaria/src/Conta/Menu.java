@@ -1,12 +1,19 @@
 package Conta;
 
 import java.util.Scanner;
+import Conta.model.conta;
 import Conta.util.Cores;
 
 public class Menu {
 
 	public static void main(String[] args) {
 		
+		conta c1 = new conta(1, 444, 1, "Ana", 20000.0f );
+		c1.visualizar();
+		c1.sacar(22000.0f);
+		c1.visualizar();
+		c1.depositar(5000.0f);
+		c1.visualizar();
 		
 
 		Scanner scanner = new Scanner(System.in);
@@ -14,7 +21,7 @@ public class Menu {
 
 		while (true) {
 
-			System.out.println(Cores.TEXT_PURPLE + Cores.ANSI_BLACK_BACKGROUND	+ "********************************************************");
+			System.out.println(Cores.TEXT_PURPLE + Cores.ANSI_BLACK_BACKGROUND	+ "\n\n********************************************************");
 			System.out.println(" 	 						");
 			System.out.println("                    BANCO DO BRAZIL!                    ");
 			System.out.println("							");
@@ -35,7 +42,7 @@ public class Menu {
 			opcao = scanner.nextInt();
 
 			if (opcao == 9) {
-				System.out.println(Cores.TEXT_WHITE_BOLD + "\nBanco do Brazil- O seu futuro começa aqui!!");
+				System.out.println(Cores.TEXT_PURPLE + "\nBanco do Brazil- O seu futuro começa aqui!!");
 				sobre();
 				scanner.close();
 				System.exit(0);
@@ -89,12 +96,13 @@ public class Menu {
 		}
 
 	}
+	
 
 	public static void sobre() {
-		System.out.println("\n*********************************************************");
+		System.out.println(Cores.TEXT_PURPLE + "*********************************************************" + Cores.TEXT_RESET);
 		System.out.println("Projeto Desenvolvido por: ");
 		System.out.println("Generation Brasil - generation@generation.org");
 		System.out.println("github.com/conteudoGeneration");
-		System.out.println("*********************************************************");
+		System.out.println(Cores.TEXT_PURPLE + "*********************************************************" + Cores.TEXT_RESET);
 	}
 }
