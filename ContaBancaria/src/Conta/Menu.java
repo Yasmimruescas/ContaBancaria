@@ -12,7 +12,7 @@ public class Menu {
 
 		while (true) {
 
-			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND	+ "********************************************************");
+			System.out.println(Cores.TEXT_PURPLE + Cores.ANSI_BLACK_BACKGROUND	+ "********************************************************");
 			System.out.println(" 	 						");
 			System.out.println("                    BANCO DO BRAZIL!                    ");
 			System.out.println("							");
